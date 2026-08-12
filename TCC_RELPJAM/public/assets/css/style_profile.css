@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+.account-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.account-sidebar {
+    width: 260px;
+    background: #111827;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* USUÁRIO */
+.user-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #4f46e5;
+    object-fit: cover;
+}
+
+/* BOTÕES DAS ABAS */
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.tab-btn:hover {
+    background: #374151;
+}
+
+.tab-btn.active {
+    background: #4f46e5;
+}
+
+/* CONTEÚDO */
+.account-content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* ABAS */
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+/* BOX INFO */
+.box-info {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.perfil-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 420px;
+}
+
+.user-img-large {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4f46e5;
+    margin-bottom: 15px;
+}
+
+/* INPUTS */
+.perfil-form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.2s;
+}
+
+.perfil-form input:focus {
+    border-color: #4f46e5;
+}
+
+/* BOTÃO */
+.perfil-form button {
+    padding: 10px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.perfil-form button:hover {
+    background: #3730a3;
+}
